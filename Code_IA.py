@@ -26,20 +26,18 @@ if __name__ == "__main__":
  print("random synaptic weights: ")
  print(neural_network.synaptic_weights)
 
- training_inputs = np.array([[1,0,1],
-                            [0,0,0],
-                            [1,0,0],
-                            [0,1,1],
-                            [0,1,0]])
-training_outputs = np.array([[1,0,1,0,0]]).T
+training_inputs = np.array([[0,0,1,1,0,0],[1,0,1,1,1,0],[0,1,1,1,0,1],[0,1,0,0,1,1],[1,1,1,0,0,1],[0,1,0,1,1,0]])
+training_outputs = np.array([[1,1,0,0,0]]).T
 neural_network.train(training_inputs, training_outputs, 10000)
 print("synaptic weights after training:")
 print(neural_network.synaptic_weights)
 A = str(input("input 1: "))
 B = str(input("input 2: "))
 C = str(input("input 3: "))
+D = str(input("input 4: "))
+E = str(input("input 5: "))
+F = str(input("input 6: "))
 
-print("New situation: input data = ", 1,2,3)
+print("New situation: input data = ", 1,2,3,4,5,6)
 print("output data: ")
-print(neural_network.think(np.array([1,2,3])))
-
+print(neural_network.think(np.array([1,2,3,4,5,6])))
