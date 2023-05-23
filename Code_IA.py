@@ -7,7 +7,7 @@ class NeuralNetwork():
         # Seed the random number generator
         np.random.seed(1)
 
-        # Set synaptic weights to a 3x1 matrix,
+        # Set synaptic weights to a 6x3 matrix,
         # with values from -1 to 1 and mean 0
         self.synaptic_weights = 2 * np.random.random((6, 3)) - 1
 
