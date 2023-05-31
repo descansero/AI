@@ -84,4 +84,4 @@ if __name__ == "__main__":
     print("Output data: ")
     print(neural_network.think(np.array([A, B, C, D, E, F])))
 
-	Libre de virus.www.avast.com
+
